@@ -390,12 +390,12 @@ def benchmark(seed, cluster_job_log, use_cache, cache_result, prioritize, plot=F
         os.makedirs(plot_dir)
 
     # Testing
-    schedulers = ['FIFO+fair']
-    scheduler_name = ['FIFO-Fair']
+    # schedulers = ['FIFO+fair']
+    # scheduler_name = ['FIFO-Fair']
 
     # Intro
-    #schedulers = ['LAS+fair' , 'LAS+tune', 'SRTF+fair', 'SRTF+tune']
-    #scheduler_name = ['LAS-Fair', 'LAS-Tune', 'SRTF-Fair', 'SRTF-Tune']
+    schedulers = ['LAS+fair' , 'LAS+tune', 'SRTF+fair', 'SRTF+tune', 'TETRIS', 'TETRIS+tune', 'DRF', 'DRF+tune']
+    scheduler_name = ['LAS-Fair', 'LAS-Tune', 'SRTF-Fair', 'SRTF-Tune', 'TETRIS', 'TETRIS-tune', 'DRF-Greedy', 'DRF-Tune']
 
     #schedulers = ['TETRIS', 'TETRIS+tune']
     #scheduler_name = ['TETRIS', 'TETRIS-tune']
